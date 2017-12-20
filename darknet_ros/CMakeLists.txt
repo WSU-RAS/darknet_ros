@@ -46,7 +46,7 @@ ENDIF ( X11_FOUND )
 
 # Find rquired packeges
 find_package(Boost REQUIRED COMPONENTS thread)
-find_package(OpenCV REQUIRED)
+find_package(OpenCV 3 REQUIRED)
 find_package(catkin REQUIRED
   COMPONENTS
     cv_bridge
@@ -149,6 +149,7 @@ if (CUDA_FOUND)
     curand
     ${Boost_LIBRARIES}
     ${catkin_LIBRARIES}
+    ${OpenCV_LIBRARIES}
   )
 
   cuda_add_executable(${PROJECT_NAME}
@@ -202,6 +203,7 @@ else()
     stdc++
     ${Boost_LIBRARIES}
     ${catkin_LIBRARIES}
+    ${OpenCV_LIBRARIES}
   )
 
   add_executable(${PROJECT_NAME}
