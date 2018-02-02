@@ -1,0 +1,16 @@
+yolo_model:
+    config_file:
+        name: SmartHome.cfg
+    weight_file:
+        name: SmartHome.weights
+    threshold:
+        value: 0.3
+    detection_classes:
+        names:
+          -  food
+          -  glass
+          -  keys
+          -  pillbottle
+          -  plant
+          -  umbrella
+          -  watercan

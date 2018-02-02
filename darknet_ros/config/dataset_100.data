@@ -1,0 +1,6 @@
+classes = 7
+train = training_100.txt
+valid = validate.txt
+names = datasets/SmartHome/labels.names
+backup = /data/vcea/matt.taylor/Projects/ras-object-detection/datasets/SmartHome/backup_100
+eval = wsu
